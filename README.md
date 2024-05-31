@@ -104,21 +104,6 @@ Each task should have the following fields:
 
    You should see the to-do list application homepage.
 
-## Evaluation Criteria
 
-- Correctness and completeness of the implemented features.
-- Code quality, structure, and adherence to best practices.
-- Proper use of Laravel’s features and functionality.
-- Clarity and completeness of the README.md instructions.
 
-## Submission
 
-Please submit the link to the Git repository to [acrhasif@gmail.com](mailto:acrhasif@gmail.com).
-
-Thank you, and good luck!
-
-Sincerely,
-
-Asif Mahbub  
-Manager, Business Development  
-American Center of Regenerative Health and Research
