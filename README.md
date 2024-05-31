@@ -1,66 +1,124 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# To-Do List Application - CRUD Project
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Dear Md. Shakirul Islam,
 
-## About Laravel
+Congratulations on being shortlisted for the position of "Software Development Intern (Laravel PHP)"! As part of the next step in the selection process, you are required to develop a simple to-do list application using Laravel. Below are the instructions and guidelines for this task.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Project Description
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+This project is a simple to-do list application that allows users to create, read, update, and delete tasks. The application is built using Laravel and uses a SQLite database for simplicity. 
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Features
 
-## Learning Laravel
+- Users can create tasks with a title and a description.
+- Users can mark tasks as completed or incomplete.
+- Users can edit and delete tasks.
+- Input fields are validated to ensure data integrity (e.g., title should not be empty, description is optional).
+- Tasks are displayed in a list with their titles and statuses (completed/incomplete).
+- Basic styling is applied to distinguish between completed and incomplete tasks.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Requirements
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- Use Laravel (latest stable version).
+- Use a SQLite database.
+- Follow Laravel’s best practices and coding standards.
+- Include comments in the code where necessary to explain the logic.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Database Schema
 
-## Laravel Sponsors
+Each task should have the following fields:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- `Title`: string, required
+- `Description`: text, optional
+- `Status`: boolean, completed (true) or incomplete (false)
+- `Timestamps`: created_at and updated_at
 
-### Premium Partners
+## Environment Setup
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+### Prerequisites
 
-## Contributing
+- PHP >= 7.4
+- Composer
+- SQLite
+- Git
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Steps to Set Up the Development Environment
 
-## Code of Conduct
+1. **Clone the repository:**
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+   ```bash
+   git clone https://github.com/yourusername/todo-list.git
+   cd todo-list
+   ```
 
-## Security Vulnerabilities
+2. **Install dependencies:**
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+   ```bash
+   composer install
+   ```
 
-## License
+3. **Create a copy of the `.env` file:**
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+   ```bash
+   cp .env.example .env
+   ```
+
+4. **Update the `.env` file with the following database configuration:**
+
+   ```env
+   DB_CONNECTION=sqlite
+   DB_DATABASE=/path/to/your/database/database.sqlite
+   ```
+
+   Ensure the specified path exists and the `database.sqlite` file is created. You can create the file using:
+
+   ```bash
+   touch database/database.sqlite
+   ```
+
+5. **Generate the application key:**
+
+   ```bash
+   php artisan key:generate
+   ```
+
+6. **Run the migrations to set up the database schema:**
+
+   ```bash
+   php artisan migrate
+   ```
+
+### Instructions to Run the Application
+
+1. **Start the development server:**
+
+   ```bash
+   php artisan serve
+   ```
+
+2. **Open your browser and navigate to:**
+
+   ```
+   http://localhost:8000
+   ```
+
+   You should see the to-do list application homepage.
+
+## Evaluation Criteria
+
+- Correctness and completeness of the implemented features.
+- Code quality, structure, and adherence to best practices.
+- Proper use of Laravel’s features and functionality.
+- Clarity and completeness of the README.md instructions.
+
+## Submission
+
+Please submit the link to the Git repository to [acrhasif@gmail.com](mailto:acrhasif@gmail.com).
+
+Thank you, and good luck!
+
+Sincerely,
+
+Asif Mahbub  
+Manager, Business Development  
+American Center of Regenerative Health and Research
