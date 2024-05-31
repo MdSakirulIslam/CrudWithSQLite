@@ -1,21 +1,18 @@
 # To-Do List Application - CRUD Project
 
-Dear Md. Shakirul Islam,
-
-Congratulations on being shortlisted for the position of "Software Development Intern (Laravel PHP)"! As part of the next step in the selection process, you are required to develop a simple to-do list application using Laravel. Below are the instructions and guidelines for this task.
+    Welcome to my project,This very simple project with laravel. Below are the instructions and guidelines for this task.
 
 ## Project Description
 
-This project is a simple to-do list application that allows users to create, read, update, and delete tasks. The application is built using Laravel and uses a SQLite database for simplicity. 
+This project is a simple to-do list application that allows users to create, read, update, and delete tasks. The application is built using Laravel and uses a SQLite database for simplicity. Here I use MVC() pattern.The Model-View-Controller (MVC) design pattern is a foundational architectural pattern in software development. By separating an application into three interconnected components—Model, View, and Controller—MVC aims to decouple the user interface from the underlying data and logic, enhancing the modularity and maintainability of the codebase.
 
 ## Features
 
-- Users can create tasks with a title and a description.
+- Users can create tasks with "Product Name","Product Code","Product Description","Product Image".
 - Users can mark tasks as completed or incomplete.
 - Users can edit and delete tasks.
-- Input fields are validated to ensure data integrity (e.g., title should not be empty, description is optional).
-- Tasks are displayed in a list with their titles and statuses (completed/incomplete).
-- Basic styling is applied to distinguish between completed and incomplete tasks.
+- Tasks are displayed in a list with their titles and statuses.
+- Basic styling is applied in this tasks.
 
 ## Requirements
 
